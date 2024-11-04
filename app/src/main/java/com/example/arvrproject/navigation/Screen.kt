@@ -1,4 +1,7 @@
 package com.example.arvrproject.navigation
 
-class Screen {
+sealed class Screen (val route: String){
+
+    object HomeScreen : Screen("home")
+
 }
